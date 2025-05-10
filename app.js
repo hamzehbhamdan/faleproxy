@@ -119,5 +119,6 @@ if (require.main === module) {
   });
 }
 
-app.applyReplacements = applyReplacements;
-module.exports = { app, applyReplacements };
+// Make applyReplacements available for testing if needed, and keep default export for Vercel
+app.applyReplacements_for_test = applyReplacements;
+module.exports = app;

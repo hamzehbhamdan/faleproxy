@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
-const { applyReplacements } = require('../app');
+const app = require('../app');
+const applyReplacements = app.applyReplacements_for_test;
 const { sampleHtmlWithYale, sampleHtmlWithoutYale } = require('./test-utils');
 
 // Helper function to process HTML using our replacement logic
