@@ -2,7 +2,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const { sampleHtmlWithYale } = require('./test-utils');
 const nock = require('nock');
-const { app } = require('../app');
+const app = require('../app'); // Corrected import
 
 /* Enable net connect for all hosts in integration tests */
 nock.enableNetConnect();
